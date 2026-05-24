@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+#header-upload{
+    background: #3b4461;
+}
+
+main{
+    margin-bottom: 100px;
+}
+
+.content-container{
+    max-width: 420px;
+    margin: 300px auto 40px;
+}
+
+.upload-title{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.8rem;
+    color: rgb(69, 69, 69);
+}
+
+.upload-image{
+    font-size: 22px ;
+    font-weight: 800;
+    border-radius: 28px;
+    box-shadow: none;
+    padding: 16px 45px;
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: rgb(10,132,255);
+    color: white;
+    display: block;
+    width: 160px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.upload-image:hover{
+    background-color: rgb(15, 132, 249);
+    box-shadow: 2px 2px 5px rgba(35, 33, 62, 0.5);
+}
+
+.uploaded{
+    font-size: 28px;
+    font-weight: 600;
+    color: green;
+    display: flex;
+    visibility: hidden;
+    transition: 0.7s;
+    justify-content: center;
+}
+
+input{
+    display: none;
+}
+
+/* .images{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.image-container{
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    margin-bottom: 200px;
+}
+
+.image-container > img{
+    width: 100%;
+    height: 100%;
+    border: 4px solid #3b4461;
+} */
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+#process-btn{
+    font-size: 18px ;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.38;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 45px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgb(10,132,255);
+    color: white;
+}
+
+

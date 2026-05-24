@@ -1,0 +1,92 @@
+footer{
+    background-color: #3b4461;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.member-profile{
+    width: 300px;
+    padding: 50px 50px 10px;
+}
+
+.member-profile > div{
+    display: flex;
+}
+
+.my-pic{
+    width: 40%;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.my-name{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.my-profession{
+    color: #F3BF99;
+    font-size: 12.8px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.my-contact-info{
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+
+.my-contact-info > button{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 14px;
+    border-radius: 40%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.my-contact-info > button:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-logo{
+    width: 15px;
+}
+
+.my-email{
+    background-color: rgb(225, 225, 225);
+    color: rgb(66, 66, 66);
+}
+
+.my-linkedin{
+    background-color: #5093E2;
+    color: white;
+}
+
+.my-insta{
+    background-color: #d9caec;
+}
+
+.copyrights{
+    color: white;
+    opacity: 0.4;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.copy-separation{
+    height: 1px;
+    background-color: white;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/upload.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Upload</title>
+</head>
+<body>
+    <header id="header-upload">
+        <div class="container">
+            <nav>
+                <div class="navbar-logo">
+                    <a href="{{ url_for('index') }}">
+                        <img src="../static/images/logos/logo.png" alt="">
+                        <span class="product-name">DiagnoMatrix</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content-container">
+            <div class="upload-title">
+                Upload an Image for Breast Cancer Diagnosis
+            </div>
+            
+            <label for="input-file" class="upload-image">
+                Upload Image
+            </label>
+            <div class="uploaded">
+                Images successfully uploaded
+            </div>
+        </div>
+        <form action="{{ url_for('predictBreast') }}" method="post" enctype="multipart/form-data">
+            <input type="file" id="input-file" name="image" accept="image/*" onchange="handleInput()" required>
+            <button type="submit" value="image" id="process-btn">Process</button>
+        </form>
+        <!-- <div class="image-container">
+                <h2>Input</h2>
+                <img id="input-image" src="../static/images/lungs.jpeg" alt="Original Image">
+            </div> -->
+    </main>
+
+    <footer>
+        <div class="profile-container">
+            <div class="member-profile">
+                <img src="../static/images/team/meHotCroped.png" alt="" class="my-pic">
+                <div class="my-name">Devidas Deole</div>
+                <div class="my-profession">Developer</div>
+                <div class="my-contact-info">
+                    <button class="my-email">
+                        <img src="../static/images/logos/email.svg" alt="" class="contact-logo">
+                    </button>
+                    <button class="my-linkedin">
+                        <img src="../static/images/logos/linkedin.svg" alt="" class="contact-logo">
+                    </button>
+                    
+                    <button class="my-insta">
+                        <img src="../static/images/logos/instagram.svg" alt="" class="contact-logo">
+                    </button>
+                </div>
+            </div>
+
+            <div class="member-profile">
+                <img src="../static/images/team/dev.jpeg" alt="" class="my-pic">
+                <div class="my-name">Dev Patel</div>
+                <div class="my-profession">Data Analyst</div>
+                <div class="my-contact-info">
+                    <button class="my-email">
+                        <img src="../static/images/logos/email.svg" alt="" class="contact-logo">
+                    </button>
+                    <button class="my-linkedin">
+                        <img src="../static/images/logos/linkedin.svg" alt="" class="contact-logo">
+                    </button>
+
+                    <button class="my-insta">
+                        <img src="../static/images/logos/instagram.svg" alt="" class="contact-logo">
+                    </button>
+                </div>
+            </div>
+
+            <div class="member-profile">
+                <img src="../static/images/team/ekam.png" alt="" class="my-pic">
+                <div class="my-name">Ekamjot Singh</div>
+                <div class="my-profession">AI Expert</div>
+                <div class="my-contact-info">
+                    <button class="my-email">
+                        <img src="../static/images/logos/email.svg" alt="" class="contact-logo">
+                    </button>
+                    <button class="my-linkedin">
+                        <img src="../static/images/logos/linkedin.svg" alt="" class="contact-logo">
+                    </button>
+
+                    <button class="my-insta">
+                        <img src="../static/images/logos/instagram.svg" alt="" class="contact-logo">
+                    </button>
+                </div>
+            </div>
+
+            <div class="member-profile">
+                <img src="../static/images/team/jhanvi.png" alt="" class="my-pic">
+                <div class="my-name">Jhanvi Aggrawal</div>
+                <div class="my-profession">Research Expert</div>
+                <div class="my-contact-info">
+                    <button class="my-email">
+                        <img src="../static/images/logos/email.svg" alt="" class="contact-logo">
+                    </button>
+                    <button class="my-linkedin">
+                        <img src="../static/images/logos/linkedin.svg" alt="" class="contact-logo">
+                    </button>
+
+                    <button class="my-insta">
+                        <img src="../static/images/logos/instagram.svg" alt="" class="contact-logo">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="copy-separation"></div>
+        <div class="copyrights">
+            Copyrights &copy; 2024 - <span>Access Denied, IIT Mandi</span>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+</body>
+</html>

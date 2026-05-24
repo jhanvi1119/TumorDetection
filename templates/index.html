@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+
+    <!-- // inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- // rubik font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <title>Brealthy</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="navbar-logo">
+                    <a href="{{ url_for('index') }}">
+                        <img src="../static/images/logos/logo.png" alt="">
+                        <span class="product-name">DiagnoMatrix</span>
+                    </a>
+                </div>
+                <div class="navbar-buttons">
+                    <button class="get-support nav-button" onclick="scrollToGoals()">
+                        Our Goals
+                    </button>
+                    <button class="donate nav-button" onclick="scrollToTeam()">
+                        Contact Us
+                    </button>
+                    <button class="story nav-button">
+                        How It Works
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="intro-content">
+        <div class="container top-content">
+            <div class=" top-content-text">
+                Empowering Health with AI Insights
+            </div>
+        </div>
+        <div class="section-b">
+            <div class="goals-container">
+                <!-- <div class="our-goal-title">
+                    Our Goal
+                </div> -->
+                <div class="our-goals">
+                    "In the pursuit of health, knowledge is power. Through MRI, we gain insight, and through diagnosis, we find hope."
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="lung-cancer function">
+            <div class="function-description">
+                <div class="function-title">
+                    Our Goals
+                </div>
+                <div class="function-go">
+                    <div class="description-content">
+                        The primary goal is to facilitate early detection and diagnosis of critical health conditions, including brain tumors, pneumonia, and breast cancer. By leveraging advanced MRI analysis techniques, the website aims to identify subtle abnormalities and anomalies indicative of these conditions at their early stages when treatment outcomes are often more favorable.
+                    </div>
+                    <!-- <a href="{{ url_for('uploadBrain') }}">
+                        <button class="get-started">        
+                            Get Started
+                        </button>
+                    </a> -->
+                </div>
+            </div>
+            <div class="function-image left">
+                <img src="../static/images/goals.jpeg" alt="">
+            </div>
+        </div>
+        <div class="brain-tumor function">
+            <div class="function-image right">
+                <img src="../static/images/brain.jpeg" alt="">
+            </div>
+            <div class="function-description">
+                <div class="function-title">
+                    Brain Tumor 
+                </div>
+                <div class="function-go">
+                    <div class="description-content">
+                        Our innovative platform utilizes state-of-the-art MRI analysis to provide insights into your brain health. Simply upload your MRI scan, and our sophisticated algorithms will analyze the data, detecting any anomalies or abnormalities, including tumors.
+                    </div>
+                    <a href="{{ url_for('uploadBrain') }}">
+                        <button class="get-started">        
+                            Get Started
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lung-cancer function">
+            <div class="function-description">
+                <div class="function-title">
+                    Breast Cancer
+                </div>
+                <div class="function-go">
+                    <div class="description-content">
+                        Experience the future of breast health assessment with our revolutionary platform. By uploading your MRI scan, our algorithms analyze the data, identifying any indications of breast cancer. With our precise and proactive approach, you can monitor your breast health and take proactive steps towards early detection
+                    </div>
+                    <a href="{{ url_for('uploadBreast') }}">
+                        <button class="get-started">        
+                            Get Started
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="function-image left">
+                <img src="../static/images/breast.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="profile-container">
+            <div class="member-profile">
+                <img src="../static/images/team/meHotCroped.png" alt="" class="my-pic">
+                <div class="my-name">Devidas Deole</div>
+                <div class="my-profession">Developer</div>
+                <div class="my-contact-info">
+                    <button class="my-email">
+                        <img src="../static/images/logos/email.svg" alt="" class="contact-logo">
+                    </button>
+                    <button class="my-linkedin">
+                        <img src="../static/images/logos/linkedin.svg" alt="" class="contact-logo">
+                    </button>
+                    
+                    <button class="my-insta">
+                        <img src="../static/images/logos/instagram.svg" alt="" class="contact-logo">
+                    </button>
+                </div>
+            </div>
+
+            <div class="member-profile">
+                <img src="../static/images/team/dev.jpeg" alt="" class="my-pic">
+                <div class="my-name">Dev Patel</div>
+                <div class="my-profession">Data Analyst</div>
+                <div class="my-contact-info">
+                    <button class="my-email">
+                        <img src="../static/images/logos/email.svg" alt="" class="contact-logo">
+                    </button>
+                    <button class="my-linkedin">
+                        <img src="../static/images/logos/linkedin.svg" alt="" class="contact-logo">
+                    </button>
+
+                    <button class="my-insta">
+                        <img src="../static/images/logos/instagram.svg" alt="" class="contact-logo">
+                    </button>
+                </div>
+            </div>
+
+            <div class="member-profile">
+                <img src="../static/images/team/ekam.png" alt="" class="my-pic">
+                <div class="my-name">Ekamjot Singh</div>
+                <div class="my-profession">AI Expert</div>
+                <div class="my-contact-info">
+                    <button class="my-email">
+                        <img src="../static/images/logos/email.svg" alt="" class="contact-logo">
+                    </button>
+                    <button class="my-linkedin">
+                        <img src="../static/images/logos/linkedin.svg" alt="" class="contact-logo">
+                    </button>
+
+                    <button class="my-insta">
+                        <img src="../static/images/logos/instagram.svg" alt="" class="contact-logo">
+                    </button>
+                </div>
+            </div>
+
+            <div class="member-profile">
+                <img src="../static/images/team/jhanvi.png" alt="" class="my-pic">
+                <div class="my-name">Jhanvi Aggrawal</div>
+                <div class="my-profession">Research Expert</div>
+                <div class="my-contact-info">
+                    <button class="my-email">
+                        <img src="../static/images/logos/email.svg" alt="" class="contact-logo">
+                    </button>
+                    <button class="my-linkedin">
+                        <img src="../static/images/logos/linkedin.svg" alt="" class="contact-logo">
+                    </button>
+
+                    <button class="my-insta">
+                        <img src="../static/images/logos/instagram.svg" alt="" class="contact-logo">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="copy-separation"></div>
+        <div class="copyrights">
+            Copyrights &copy; 2024 - <span>Access Denied, IIT Mandi</span>
+        </div>
+    </footer>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
